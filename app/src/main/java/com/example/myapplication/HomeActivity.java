@@ -24,7 +24,7 @@ public class HomeActivity extends AppCompatActivity {
         productList = new ArrayList<>();
         recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new GridLayoutManager(this, 3));
+        recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
 
         adapter = new ProductAdapter(productList);
         recyclerView.setAdapter(adapter);
